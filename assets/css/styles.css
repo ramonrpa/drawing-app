@@ -1,8 +1,12 @@
-html, body {
-    overflow: hidden;
+body, html {
     margin: 0;
     padding: 0;
+    max-height: 100vh;
     position: fixed;
+}
+
+* {
+    overflow: hidden;
 }
 
 .sidebar {
@@ -11,7 +15,6 @@ html, body {
     color: #fff;
     min-height: 100vh;
     position: absolute;
-    overflow: auto;
     width: 60px;
     top: 0;
     left: 0;
