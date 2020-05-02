@@ -111,7 +111,7 @@ function drawOnGraphic() {
             squareOrigin = [mouseX, mouseY]
         } else {
             noFill()
-            stroke("#000")
+            stroke(color)
             strokeWeight(radius)
             rect(squareOrigin[0], squareOrigin[1], mouseX - squareOrigin[0], mouseY - squareOrigin[1])
         }
@@ -132,7 +132,7 @@ function drawOnGraphic() {
             circleOrigin = [mouseX, mouseY]
         } else {
             noFill()
-            stroke("#000")
+            stroke(color)
             strokeWeight(radius)
             let d = createVector(mouseX - circleOrigin[0], mouseY - circleOrigin[1]).mag()
             ellipseMode(CENTER)
