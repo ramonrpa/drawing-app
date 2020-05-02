@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Drawing</title>
+    <meta name="theme-color" content="#cc5c28">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <input type="color" id="color" tabindex=-1 hidden>
+        <ul class="nav flex-column">
+            <li class="tool nav-item active">
+                <i class="fas fa-paint-brush"></i>
+            </li>
+            <li class="tool nav-item">
+                <i class="fas fa-square"></i>
+            </li>
+            <li class="tool nav-item">
+                <i class="far fa-square"></i>
+            </li>
+            <li class="tool nav-item">
+                <i class="fas fa-circle"></i>
+            </li>
+            <li class="tool nav-item">
+                <i class="far fa-circle"></i>
+            </li>
+            <li class="tool nav-item">
+                <i id="clear" class="fas fa-eraser"></i>
+            </li>
+            <li class="nav-item" data-toggle="modal" data-target="#settings">
+                <i class="fas fa-sliders-h"></i>
+            </li>
+            <li class="nav-item" id="colorPicker">
+                <i class="fas fa-palette"></i>
+            </li>
+            <li class="nav-item" id="download">
+                <i class="fas fa-file-download"></i>
+            </li>
+            <li class="nav-item" id="trash">
+                <i class="fas fa-trash"></i>
+            </li>
+        </ul>
+    </div>
+    <div id="canvas">
+
+    </div>
+    <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settings" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="radius">Radius</label>
+                    <input value="20" min="0" max="255" type="range" class="form-control-range" id="radius">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

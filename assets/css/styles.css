@@ -1,0 +1,37 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #fde910;
+    box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+    color: #fff;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    margin: 5px;
+}
+
+.nav .nav-item {
+    font-size: 1.9rem;
+    margin: 10px;
+    color: rgba(22, 22, 22, 0.603);
+}
+
+.nav .nav-item:hover {
+    font-size: 1.9rem;
+    margin: 10px;
+    color: #030303;
+}
+
+.nav .nav-item.active {
+    font-size: 1.9rem;
+    margin: 10px;
+    color: #030303;
+}
