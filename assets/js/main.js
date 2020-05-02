@@ -9,7 +9,7 @@ let shapeFill = true
 
 $(document).ready(() => {
 
-    $("#canvas").css("margin-left", $('.sidebar').width())
+    $("#canvas").css("margin-left", '60px')
 
     $('.tool').each((index, item) => {
         item = $(item)
@@ -55,9 +55,9 @@ function setColor() {
 }
 
 function setup() {
-    createCanvas(document.body.clientWidth - $('.sidebar').width(), document.body.clientHeight).parent("#canvas")
+    createCanvas(window.innerWidth - 60, window.innerHeight).parent("#canvas")
     ellipseMode(CENTER)
-    graphic = createGraphics(document.body.clientWidth - $('.sidebar').width(), document.body.clientHeight)
+    graphic = createGraphics(window.innerWidth - 60, window.innerHeight)
     graphic.background(255)
 }
 
